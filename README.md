@@ -130,9 +130,9 @@ pip install -r requirements.txt
 
 ## 👥 Authors
 **Project:** _Credit Scoring Model_   
-**Team:**
-- Mugica Liparoli Juan Antonio
-- Enríquez Nares Diego Emilio
+**Team:**  
+- Mugica Liparoli Juan Antonio  
+- Enríquez Nares Diego Emilio  
 - Brizuela Casarín Ana Sofía   
 **Course:** _Credit Models_   
 **Professor:** _Rodolfo Slay Ramos_   
