@@ -23,6 +23,7 @@ It follows a complete data science workflow, from data ingestion and cleaning to
 
 ## 🏗️ Project Structure
 
+```markdown
 Modelo_Puntuacion_Crediticia/
 │
 ├── data/ # Raw and processed datasets
@@ -31,6 +32,7 @@ Modelo_Puntuacion_Crediticia/
 ├── results/ # Reports, visualizations, and model outputs
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+```
 
 ---
 
@@ -98,7 +100,7 @@ Scoring framework suitable for future predictive modeling.
 
 (Detailed metrics and model evaluation can be found in the notebooks.)
 
-👥 Authors
+## 👥 Authors
 **Project:** _Credit Scoring Model_
 **Team:**
 - Mugica Liparoli Juan Antonio
