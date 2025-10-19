@@ -26,10 +26,7 @@ It follows a complete data science workflow, from data ingestion and cleaning to
 ```markdown
 Modelo_Puntuacion_Crediticia/
 │
-├── data/ # Raw and processed datasets
-├── notebooks/ # Exploratory and modeling Jupyter notebooks
-├── src/ # Scripts for data processing and model building
-├── results/ # Reports, visualizations, and model outputs
+├── Data/ # Raw and processed datasets
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 ```
@@ -76,7 +73,6 @@ Modelo_Puntuacion_Crediticia/
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/diegotita4/MC_P2.git
-cd Modelo_Puntuacion_Crediticia
 ```
 
 ### 2. Install Dependencies
@@ -91,6 +87,8 @@ Open the main notebook or run the scripts inside the src/ folder:
 jupyter notebook notebooks/credit_scoring.ipynb
 ```
 
+---
+
 ## 📊 Results (Summary)
 Comprehensive EDA identifying main drivers of credit performance.
 
@@ -100,16 +98,19 @@ Scoring framework suitable for future predictive modeling.
 
 (Detailed metrics and model evaluation can be found in the notebooks.)
 
+---
+
 ## 👥 Authors
-**Project:** _Credit Scoring Model_
+**Project:** _Credit Scoring Model_   
 **Team:**
 - Mugica Liparoli Juan Antonio
 - Enríquez Nares Diego Emilio
-- Brizuela Casarín Ana Sofía
+- Brizuela Casarín Ana Sofía   
+**Course:** _Credit Models_   
+**Professor:** _Rodolfo Slay Ramos_   
+**Date:** _September 24, 2024_   
 
-**Course:** _Credit Models_
-**Professor:** _Rodolfo Slay Ramos_
-**Date:** _September 24, 2024_
+---
 
 ## 🪪 License
 This project is for academic and educational purposes only.
