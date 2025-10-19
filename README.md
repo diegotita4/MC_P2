@@ -75,7 +75,7 @@ Modelo_Puntuacion_Crediticia/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Modelo_Puntuacion_Crediticia.git
+git clone https://github.com/diegotita4/MC_P2.git
 cd Modelo_Puntuacion_Crediticia
 ```
 
@@ -106,6 +106,7 @@ Scoring framework suitable for future predictive modeling.
 - Mugica Liparoli Juan Antonio
 - Enríquez Nares Diego Emilio
 - Brizuela Casarín Ana Sofía
+
 **Course:** _Credit Models_
 **Professor:** _Rodolfo Slay Ramos_
 **Date:** _September 24, 2024_
