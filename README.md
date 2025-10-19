@@ -1,18 +1,27 @@
 # Credit Scoring Model
 
-This project develops a **Credit Scoring Model** that evaluates the creditworthiness of clients using statistical and data science techniques.  
-The model applies data preprocessing, exploratory data analysis (EDA), and feature engineering to generate a predictive scoring system that supports financial decision-making.
+This project develops a **Credit Scoring Model** to evaluate the creditworthiness of clients using statistical and data science techniques.  
+It includes data preprocessing, exploratory data analysis (EDA), feature engineering, and implementation of predictive models using machine learning.
 
 ---
 
 ## 🧠 Project Overview
 
 The purpose of this project is to design and implement a **credit risk scoring system** capable of classifying clients according to their probability of default.  
-It follows a complete data science workflow, from data ingestion and cleaning to exploratory analysis and model construction.
+The workflow follows the full **data science pipeline**, from data ingestion and cleaning to exploratory analysis and model construction.
 
 ---
 
 ## 🎯 Objectives
+
+- Analyze and preprocess client financial data.  
+- Identify key risk factors affecting credit performance.  
+- Build classification models to predict credit scores using multiple machine learning algorithms.  
+- Visualize results to support business interpretation.  
+
+---
+
+## 🏗️ Project Structure
 
 - Analyze and preprocess client financial data.  
 - Identify key risk factors affecting credit performance.  
@@ -26,51 +35,79 @@ It follows a complete data science workflow, from data ingestion and cleaning to
 ```markdown
 Modelo_Puntuacion_Crediticia/
 │
-├── Data/ # Raw and processed datasets
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── Data/ # Raw and cleaned datasets
+│ └── clean_data.xlsx
+├── analysis/ # EDA scripts and notebooks
+├── Models/ # Python scripts for ML models
+│ ├── NN.py # Neural Network implementation
+│ ├── XGBoost.py # XGBoost implementation
+│ ├── benchmarkmodel.py # Logistic Regression benchmark
+│ ├── decision_tree.py # Decision Tree implementation
+│ ├── random_forest.py # Random Forest implementation
+│ ├── data.py # Data preprocessing functions
+│ └── functions.py # Helper functions
+├── save_models/ # Trained model files
+│ ├── DecisionTree.pkl
+│ ├── LogisticRegression_benchmark.pkl
+│ ├── XGBoost.pkl
+│ └── credit_score_nn_model.h5
+├── notebooks/ # Jupyter notebooks
+│ └── Modelo_puntuacion_crediticia.ipynb
+├── documentation/ # Exported reports
+│ ├── Modelo_puntuacion_crediticia.docx
+│ ├── Modelo_puntuacion_crediticia.html
+│ └── Modelo_puntuacion_crediticia.pdf
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
 ## ⚙️ Methodology
 
-1. **Data Loading & Exploration**  
-   Import datasets and perform initial checks on data quality, structure, and distribution.
+### Data Loading & Exploration
+- Import datasets and perform initial checks on data quality, structure, and distribution.  
 
-2. **Data Cleaning**  
-   Handle missing values, outliers, and data inconsistencies.
+### Data Cleaning
+- Handle missing values, outliers, and inconsistencies in the financial data.  
 
-3. **Feature Encoding**  
-   Apply `LabelEncoder` to categorical variables for model readiness.
+### Feature Engineering
+- Encode categorical variables with `LabelEncoder` and create new features based on financial indicators.  
 
-4. **Exploratory Data Analysis (EDA)**  
-   Use `pandas`, `matplotlib`, and `seaborn` for visual correlation and distribution analysis.
+### Exploratory Data Analysis (EDA)
+- Use `pandas`, `matplotlib`, and `seaborn` to visualize correlations, distributions, and patterns.  
 
-5. **Feature Engineering**  
-   Create new relevant features based on financial indicators.
-
-6. **Modeling (optional future step)**  
-   Implement machine learning algorithms (e.g., Logistic Regression, Random Forest) to generate the credit score.
+### Modeling
+- Implement multiple **classification models** to predict creditworthiness:
+  - Logistic Regression (benchmark)
+  - Decision Tree
+  - Random Forest
+  - XGBoost
+  - Neural Network
+- Evaluate models using appropriate metrics (accuracy, AUC, confusion matrix, etc.)  
 
 ---
 
 ## 🧩 Technologies Used
 
-| Library | Purpose |
-|---------|---------|
-| **NumPy** | Numerical operations |
-| **Pandas** | Data manipulation and analysis |
-| **Matplotlib / Seaborn** | Data visualization |
-| **SciPy** | Statistical analysis |
-| **scikit-learn** | Preprocessing and modeling |
-| **os** | File and directory management |
+| Library               | Purpose                                    |
+|-----------------------|--------------------------------------------|
+| NumPy                 | Numerical operations                        |
+| Pandas                | Data manipulation and analysis              |
+| Matplotlib / Seaborn  | Data visualization                          |
+| SciPy                 | Statistical analysis                        |
+| scikit-learn          | Preprocessing and machine learning models   |
+| TensorFlow / Keras    | Neural Network modeling                     |
+| os                    | File and directory management               |
 
 ---
 
 ## 🚀 Installation & Usage
 
-### 1. Clone the Repository
+1. **Clone the Repository**
 ```bash
 git clone https://github.com/diegotita4/MC_P2.git
 ```
@@ -80,23 +117,14 @@ git clone https://github.com/diegotita4/MC_P2.git
 pip install -r requirements.txt
 ```
 
-### 3. Run the Analysis
-Open the main notebook or run the scripts inside the src/ folder:
-
-```bash
-jupyter notebook notebooks/credit_scoring.ipynb
-```
-
 ---
 
 ## 📊 Results (Summary)
-Comprehensive EDA identifying main drivers of credit performance.
-
-Feature transformations improving model interpretability.
-
-Scoring framework suitable for future predictive modeling.
-
-(Detailed metrics and model evaluation can be found in the notebooks.)
+- Full EDA identifying main drivers of credit performance.   
+- Feature transformations improving model interpretability.   
+- Multiple machine learning models with saved predictions and trained models for future use.   
+- Reports and visualizations available in documentation/.   
+> Detailed metrics and model evaluation can be found in the notebook.
 
 ---
 
